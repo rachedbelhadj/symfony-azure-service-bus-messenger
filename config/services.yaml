@@ -1,0 +1,5 @@
+services:
+  microsoftazure.azure_service_bus_messenger.transport_factory:
+    class: MicrosoftAzure\AzureServiceBusMessenger\Transport\AzureServiceBusTransportFactory
+    tags:
+      - { name: messenger.transport_factory }
